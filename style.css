@@ -1,0 +1,114 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+    padding-top: 10vh;
+}
+
+.greeting {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.caption {
+    width: 80%;
+    font-size: larger;
+}
+
+.contact {
+    padding-top: 10px;
+}
+
+.contact svg {
+    fill: #27002F;
+}
+
+.contact a {
+    margin-right: 10px;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    .content {
+        padding-top: 15vh;
+    }
+    
+  }
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .content {
+        width: 80%;
+    }
+
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    
+    .content {
+        width: 80%;
+    }
+
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .content {
+        width: 90%;
+    }
+
+    .caption {
+        width: 100%;
+    }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .content {
+        width: 90%;
+    }
+    
+    .caption {
+        width: 100%;
+    }
+
+}
